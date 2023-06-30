@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FruitMarket.API</name>
+    </assembly>
+    <members>
+        <member name="M:FruitMarket.API.Controllers.BracketsController.ListAsync">
+            <summary>
+            Lists all Brackets.
+            </summary>
+            <returns>List os Brackets.</returns>
+        </member>
+        <member name="M:FruitMarket.API.Controllers.BracketsController.PostAsync(FruitMarket.API.Resources.SaveBracketResource)">
+            <summary>
+            Saves a new Bracket.
+            </summary>
+            <param name="resource">Bracket data.</param>
+            <returns>Response for the request.</returns>
+        </member>
+        <member name="M:FruitMarket.API.Controllers.BracketsController.PutAsync(System.Int32,FruitMarket.API.Resources.SaveBracketResource)">
+            <summary>
+            Updates an existing Bracket according to an identifier.
+            </summary>
+            <param name="id">Bracket identifier.</param>
+            <param name="resource">Updated Bracket data.</param>
+            <returns>Response for the request.</returns>
+        </member>
+        <member name="M:FruitMarket.API.Controllers.BracketsController.DeleteAsync(System.Int32)">
+            <summary>
+            Deletes a given Bracket according to an identifier.
+            </summary>
+            <param name="id">Bracket identifier.</param>
+            <returns>Response for the request.</returns>
+        </member>
+        <member name="M:FruitMarket.API.Controllers.ProductsController.ListAsync(FruitMarket.API.Resources.ProductsQueryResource)">
+            <summary>
+            Lists all existing products.
+            </summary>
+            <returns>List of products.</returns>
+        </member>
+        <member name="M:FruitMarket.API.Controllers.ProductsController.PostAsync(FruitMarket.API.Resources.SaveProductResource)">
+            <summary>
+            Saves a new product.
+            </summary>
+            <param name="resource">Product data.</param>
+            <returns>Response for the request.</returns>
+        </member>
+        <member name="M:FruitMarket.API.Controllers.ProductsController.PutAsync(System.Int32,FruitMarket.API.Resources.SaveProductResource)">
+            <summary>
+            Updates an existing product according to an identifier.
+            </summary>
+            <param name="id">Product identifier.</param>
+            <param name="resource">Product data.</param>
+            <returns>Response for the request.</returns>
+        </member>
+        <member name="M:FruitMarket.API.Controllers.ProductsController.DeleteAsync(System.Int32)">
+            <summary>
+            Deletes a given product according to an identifier.
+            </summary>
+            <param name="id">Product identifier.</param>
+            <returns>Response for the request.</returns>
+        </member>
+        <member name="M:FruitMarket.API.Domain.Services.Communication.BracketResponse.#ctor(FruitMarket.API.Domain.Models.Bracket)">
+            <summary>
+            Creates a success response.
+            </summary>
+            <param name="bracket">Saved Bracket.</param>
+            <returns>Response.</returns>
+        </member>
+        <member name="M:FruitMarket.API.Domain.Services.Communication.BracketResponse.#ctor(System.String)">
+            <summary>
+            Creates am error response.
+            </summary>
+            <param name="message">Error message.</param>
+            <returns>Response.</returns>
+        </member>
+    </members>
+</doc>
